@@ -19,6 +19,7 @@ onFeedbackInput();
 
 function onFormSubmit(evt) {
   evt.preventDefault();
+  console.log(userMessage);
   evt.currentTarget.reset();
   localStorage.removeItem('feedback-form-state');
 }
